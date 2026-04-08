@@ -166,19 +166,19 @@ export default function IdeaDetail() {
                 {/* Card 1 */}
                 <div className="md:col-span-2 bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Problem Summary</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">{report.problemSummary}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.problemSummary}</p>
                 </div>
                 
                 {/* Card 2 */}
                 <div className="bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Customer Persona</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">{report.customerPersona}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.customerPersona}</p>
                 </div>
 
                 {/* Card 3 */}
                 <div className="bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Market Overview</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">{report.marketOverview}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.marketOverview}</p>
                 </div>
 
                 {/* Card 4 */}
@@ -209,7 +209,7 @@ export default function IdeaDetail() {
                 {/* Card 6 */}
                 <div className="bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Justification</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">{report.justification}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.justification}</p>
                 </div>
               </div>
             </div>
