@@ -1,0 +1,68 @@
+{
+  "ideas": [
+    {
+      "id": "97bf32be-7325-43aa-8d7e-8e5ff7727ac7",
+      "title": "test JSON db",
+      "description": "test json db",
+      "problem": "Mock: Need for on-demand professional dog walking.",
+      "customer": "Mock: Busy professionals with dogs.",
+      "market": "Mock: Urban pet owners.",
+      "competitor": [
+        {
+          "name": "Rover",
+          "differentiation": "Mock: Established but less localized and premium."
+        },
+        {
+          "name": "Wag!",
+          "differentiation": "Mock: Similar on-demand."
+        },
+        {
+          "name": "Local Walkers",
+          "differentiation": "Mock: Analog and unreliable."
+        }
+      ],
+      "tech_stack": [
+        "React Native",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe API"
+      ],
+      "risk_level": "Medium",
+      "profitability_score": 75,
+      "justification": "Mock Justification: High demand in urban areas but significant customer acquisition costs.",
+      "created_at": "2026-04-08T12:27:25.120Z"
+    },
+    {
+      "id": "1dfdf26c-f544-41b5-ab07-32b1571f1604",
+      "title": "AI Resume Optimizer & Quick Apply",
+      "description": "A web application that takes a user's master resume and automatically rewrites and tailors it specifically to match the key phrases of a provided job description, ensuring it passes ATS filters while providing a custom cover letter.",
+      "problem": "Mock: Need for on-demand professional dog walking.",
+      "customer": "Mock: Busy professionals with dogs.",
+      "market": "Mock: Urban pet owners.",
+      "competitor": [
+        {
+          "name": "Rover",
+          "differentiation": "Mock: Established but less localized and premium."
+        },
+        {
+          "name": "Wag!",
+          "differentiation": "Mock: Similar on-demand."
+        },
+        {
+          "name": "Local Walkers",
+          "differentiation": "Mock: Analog and unreliable."
+        }
+      ],
+      "tech_stack": [
+        "React Native",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe API"
+      ],
+      "risk_level": "Medium",
+      "profitability_score": 75,
+      "justification": "Mock Justification: High demand in urban areas but significant customer acquisition costs.",
+      "created_at": "2026-04-08T12:29:21.988Z"
+    }
+  ]
+}
