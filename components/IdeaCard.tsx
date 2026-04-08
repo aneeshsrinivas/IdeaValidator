@@ -18,8 +18,10 @@ export default function IdeaCard({
   onDelete,
 }: IdeaCardProps) {
   const riskStyles: Record<string, string> = {
-    Low: "bg-green-100 text-green-700",
+    Easy: "bg-green-100 text-green-700",
     Medium: "bg-orange-100 text-orange-700",
+    Hard: "bg-red-100 text-red-700",
+    Low: "bg-green-100 text-green-700",
     High: "bg-red-100 text-red-700",
   };
 

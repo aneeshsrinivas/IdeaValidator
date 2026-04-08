@@ -16,9 +16,18 @@ export async function POST(req: NextRequest) {
 
     const aiData = await analyzeIdea(title, description);
 
+    let calculatedRisk = 'Medium';
+    if (aiData.profitability_score <= 40) {
+      calculatedRisk = 'Hard';
+    } else if (aiData.profitability_score <= 75) {
+      calculatedRisk = 'Medium';
+    } else {
+      calculatedRisk = 'Easy';
+    }
+
     const result = await sql`
       INSERT INTO ideas (title, description, problem, customer, market, competitor, tech_stack, risk_level, profitability_score, justification)
-      VALUES (${title}, ${description}, ${aiData.problem}, ${aiData.customer}, ${aiData.market}, ${JSON.stringify(aiData.competitor)}, ${JSON.stringify(aiData.tech_stack)}, ${aiData.risk_level}, ${aiData.profitability_score}, ${aiData.justification})
+      VALUES (${title}, ${description}, ${aiData.problem}, ${aiData.customer}, ${aiData.market}, ${JSON.stringify(aiData.competitor)}, ${JSON.stringify(aiData.tech_stack)}, ${calculatedRisk}, ${aiData.profitability_score}, ${aiData.justification})
       RETURNING *
     `;
 

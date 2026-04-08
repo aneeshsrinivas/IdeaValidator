@@ -31,14 +31,14 @@ function SkeletonDetail() {
       <div className="h-10 w-3/4 bg-gray-100 rounded mb-4"></div>
       <div className="h-4 w-full bg-gray-100 rounded mb-2"></div>
       <div className="h-4 w-2/3 bg-gray-100 rounded mb-8"></div>
-      
+
       <div className="flex gap-4 mb-8">
         <div className="flex-1 h-32 bg-gray-100 rounded-xl"></div>
         <div className="flex-1 h-32 bg-gray-100 rounded-xl"></div>
       </div>
-      
+
       <div className="h-4 w-32 bg-gray-100 rounded mb-6"></div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="md:col-span-2 h-32 bg-gray-100 rounded-xl"></div>
         <div className="h-32 bg-gray-100 rounded-xl"></div>
@@ -85,8 +85,10 @@ export default function IdeaDetail() {
   }, [id]);
 
   const riskStyles: Record<string, string> = {
-    Low: "bg-green-100 text-green-700",
+    Easy: "bg-green-100 text-green-700",
     Medium: "bg-orange-100 text-orange-700",
+    Hard: "bg-red-100 text-red-700",
+    Low: "bg-green-100 text-green-700",
     High: "bg-red-100 text-red-700",
   };
 
@@ -149,7 +151,7 @@ export default function IdeaDetail() {
                   <span className="text-xl text-gray-300 font-normal ml-1">/100</span>
                 </div>
                 <div className="w-full h-1 bg-[#f3f4f6] rounded-full overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-[#4f46e5] rounded-full transition-all duration-600 ease-out"
                     style={{ width: `${report.profitabilityScore}%` }}
                   ></div>
@@ -161,24 +163,24 @@ export default function IdeaDetail() {
               <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
                 Analysis Report
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Card 1 */}
                 <div className="md:col-span-2 bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Problem Summary</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.problemSummary}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{report.problemSummary}</p>
                 </div>
-                
+
                 {/* Card 2 */}
                 <div className="bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Customer Persona</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.customerPersona}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{report.customerPersona}</p>
                 </div>
 
                 {/* Card 3 */}
                 <div className="bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Market Overview</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.marketOverview}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{report.marketOverview}</p>
                 </div>
 
                 {/* Card 4 */}
@@ -209,7 +211,7 @@ export default function IdeaDetail() {
                 {/* Card 6 */}
                 <div className="bg-white border border-[#e5e7eb] rounded-xl p-5 transition-colors hover:border-indigo-200">
                   <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Justification</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed break-words">{report.justification}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{report.justification}</p>
                 </div>
               </div>
             </div>
